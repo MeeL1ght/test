@@ -1,0 +1,24 @@
+root = true
+
+[*]
+indent_style = space
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+[composer.json]
+indent_size = 2
+tab_width = 2
+
+[server/index.php]
+indent_size = 4
+tab_width = 4
+
+[server/src/**/*.php]
+indent_size = 4
+tab_width = 4
+
+[client/**/*.{html,css,js,json}]
+indent_size = 2
+tab_width = 2

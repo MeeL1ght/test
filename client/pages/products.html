@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./../public/svg/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./../css/setup/normalize.css" />
+    <link rel="stylesheet" href="./../css/setup/base.css" />
+    <link rel="stylesheet" href="./../css/global/classes.css" />
+    <link rel="stylesheet" href="./../css/pages/main.css" />
+    <link rel="stylesheet" href="./../css/pages/products.css" />
+  </head>
+  <body>
+    <header class="header d_flex fd_row just_cont_s just_cont_s">
+      <div class="header_brand">
+        <a href="#" target="_self" class="header_link">
+          <img src="./../public/svg/vite.svg" class="brand_logo" alt="vite" />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav_list d_flex fd_row align_items_c just_cont_s">
+          <a href="./../../index.html" class="nav_link d_flex align_items_c">
+            <ion-icon name="home" id="nav_icon"></ion-icon>
+            <li class="nav_item">Home</li>
+          </a>
+          <a
+            href="./products.html"
+            class="nav_link d_flex align_items_c selected"
+          >
+            <ion-icon name="bag-handle" id="nav_icon"></ion-icon>
+            <li class="nav_item">Products</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container d_flex fd_row just_cont_ev">
+      <!-- Product form -->
+      <form
+        class="container_item d_flex fd_col"
+        id="product_form"
+        autocomplete="off"
+      >
+        <h3 class="form_title d_flex align_self_c align_items_c">
+          Add a <span class="highlighted">New Product</span>
+          <ion-icon name="pizza" id="title_icon"></ion-icon>
+        </h3>
+        <label for="product_name" class="label">Name</label>
+        <input
+          type="text"
+          class="input"
+          name="product_name"
+          id="product_name"
+          placeholder="Ex: Apple"
+          maxlength="100"
+          required
+          autofocus
+        />
+        <label for="product_price" class="label">Price</label>
+        <input
+          type="number"
+          class="input"
+          name="product_price"
+          id="product_price"
+          placeholder="Ex: 2"
+          min="0"
+          max="20"
+          maxlength="2"
+          required
+        />
+        <button
+          type="submit"
+          class="btn submit_btn d_flex align_self_c align_items_c"
+          name="product_price"
+          id="product_price"
+        >
+          Add <ion-icon name="cart" id="submit_btn_icon"></ion-icon>
+        </button>
+      </form>
+
+      <!-- Search input and list of products -->
+      <div class="container_item d_flex fd_col align_items_c">
+        <!-- Search input -->
+        <div class="search_input_container d_flex fd_row align_items_c">
+          <ion-icon name="search" id="search_icon"></ion-icon>
+          <input
+            type="search"
+            class="input search_input"
+            name="search"
+            id="search"
+            placeholder="Search a product..."
+          />
+        </div>
+        <div class="results">
+          <h2 class="title_result_text">Results:</h2>
+          <ul class="result_list d_flex fd_col align_items_s">
+            <li class="result_item">- Products: 5</li>
+            <li class="result_item">- Total Products: 5</li>
+          </ul>
+        </div>
+        <!-- Remove All -->
+        <button
+          type="button"
+          class="btn remove_all_btn d_flex fd_row align_items_c"
+          id="remove_all_btn"
+        >
+          Remove All
+          <ion-icon name="trash-sharp" id="remove_all_icon"></ion-icon>
+        </button>
+        <!-- List of products -->
+        <ul class="products_list" id="products_list"></ul>
+      </div>
+    </main>
+
+    <!-- JS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script type="module" src="./../js/pages/products.js"></script>
+  </body>
+</html>

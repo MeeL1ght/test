@@ -1,0 +1,146 @@
+@import url('./../global/variables.css');
+
+/* header */
+header.header {
+  border-bottom: 1px solid #d0d1d3;
+}
+
+/* header_brand & nav */
+div.header_brand,
+nav.nav {
+  margin: 0.5rem 0 0.5rem 5rem;
+  /* border: 1px solid #949597; */
+}
+
+/* header_brand */
+img.brand_logo {
+  height: 3rem;
+  width: 3rem;
+  will-change: filter;
+  transition: filter 450ms ease-in-out;
+}
+img.brand_logo:hover {
+  filter: drop-shadow(0 0 1em #4750fcaa);
+}
+
+/* nav */
+nav.nav {
+  height: 3rem;
+  width: max-content;
+  margin-left: 3.8rem;
+  /* border: 1px solid red; */
+}
+
+/* nav_list */
+ul.nav_list {
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid blue; */
+}
+
+a.nav_link {
+  margin-left: 3rem;
+  color: #9fa4b3;
+  font-size: 1.12em;
+  font-weight: 500;
+  transition: color 488ms ease-in-out;
+}
+a.nav_link:hover {
+  color: #666a72;
+}
+a.nav_link:first-child {
+  margin-left: 0;
+}
+a.selected {
+  padding: 0.30rem 1rem;
+  color: #d0d1d3;
+  background-color: #7209eb;
+  border-radius: 18px;
+  transition: none;
+}
+a.selected:hover {
+  color: #d0d1d3;
+}
+
+ion-icon#nav_icon {
+  margin-right: 0.25rem;
+}
+
+/* Main */
+main.container {
+  height: 30rem;
+  border-radius: 10px;
+  /* border: 1px solid blue; */
+  margin: 3rem 10rem 0 3rem;
+  padding: 0 2rem;
+}
+
+section.welcome_container {
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  border-radius: 10px;
+  background-color: #d8dadf;
+}
+
+div.text_button_content {
+  height: 21rem;
+  width: 30rem;
+  /* border: 1px solid red; */
+  margin: 2rem 0;
+  margin-left: 5rem;
+  z-index: 2;
+}
+
+h1.title {
+  height: max-content;
+  width: max-content;
+  font-size: 4.5vw;
+  margin: 2rem 2rem;
+  color: #414b52;
+  /* border: 1px solid #000000; */
+}
+h1.title > span.title_subitem {
+  width: max-content;
+  margin: 0.92rem 0;
+}
+span.highlighted {
+  color: #672baa;
+  text-decoration: underline;
+  text-decoration-color: #845bb3;
+}
+span.highlighted_two {
+  color: #a0a3ac;
+}
+h1.title > span.title_subitem:first-child {
+  margin: 1.5rem 0;
+}
+
+img.welcome_img {
+  height: 29rem;
+  width: max-content;
+  margin-left: 8rem;
+  z-index: 1;
+  /* border: 1px solid #0f741c; */
+}
+
+button.btn {
+  width: max-content;
+  font-size: 1em;
+  color: #d0d1d3;
+  background-color: #7209eb;
+  padding: 0.9rem 0.9rem;
+  border-radius: 12px;
+}
+button.btn_welcome {
+  font-size: 1.32em;
+  margin: 1.5rem 2rem;
+  box-shadow: 0 0.35rem 0.58rem 0.1rem rgba(0, 0, 0, 0.2);
+  /* border: 0.25rem solid #c6c5c7; */
+}
+
+ion-icon#arrow_btn_icon {
+  margin-left: 0.4rem;
+  background-color: transparent;
+  border-radius: 50%;
+}

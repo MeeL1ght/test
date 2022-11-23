@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./client/public/svg/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./client/css/setup/normalize.css" />
+    <link rel="stylesheet" href="./client/css/setup/base.css" />
+    <link rel="stylesheet" href="./client/css/global/classes.css" />
+    <link rel="stylesheet" href="./client/css/pages/main.css" />
+  </head>
+  <body>
+    <header class="header d_flex fd_row just_cont_s just_cont_s">
+      <div class="header_brand">
+        <a href="#" target="_self" class="header_link">
+          <img
+            src="./client/public/svg/vite.svg"
+            class="brand_logo"
+            alt="vite"
+          />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav_list d_flex fd_row align_items_c just_cont_s">
+          <a href="./index.html" class="nav_link d_flex align_items_c selected">
+            <ion-icon name="home" id="nav_icon"></ion-icon>
+            <li class="nav_item">Home</li>
+          </a>
+          <a
+            href="./client/pages/products.html"
+            class="nav_link d_flex align_items_c"
+          >
+            <ion-icon name="bag-handle" id="nav_icon"></ion-icon>
+            <li class="nav_item">Products</li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section
+        class="welcome_container d_flex fd_row align_items_c just_cont_ev"
+      >
+        <div class="text_button_content d_flex fd_col">
+          <h1 class="title d_flex fd_col">
+            <span class="title_subitem"
+              >We have the
+              <span class="highlighted">best</span>
+            </span>
+            <span class="title_subitem">
+              <span class="highlighted_two">food products</span> for
+            </span>
+            <span class="title_subitem">you.</span>
+          </h1>
+          <a href="./client/pages/products.html">
+            <button type="button" class="btn btn_welcome d_flex align_items_c">
+              Go to Menu
+              <ion-icon
+                name="arrow-forward-outline"
+                id="arrow_btn_icon"
+              ></ion-icon>
+            </button>
+          </a>
+        </div>
+        <img
+          src="./client/public/svg/persons.svg"
+          alt="boy"
+          class="welcome_img"
+        />
+      </section>
+    </main>
+
+    <!-- JS -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

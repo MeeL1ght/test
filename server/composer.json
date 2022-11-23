@@ -1,0 +1,17 @@
+{
+  "name": "moi/app",
+  "autoload": {
+    "psr-4": {
+      "Moi\\App\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Moises Reyes",
+      "email": "meelight12@gmail.com"
+    }
+  ],
+  "require": {
+    "bramus/router": "~1.6"
+  }
+}
